@@ -1,6 +1,16 @@
+* {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
 body {
   margin: 0;
   background-color: #3d5a80;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fredericka the Great", sans-serif;
 }
 
 .projects {
@@ -11,11 +21,21 @@ body {
   background-color: #e0fbfc;
   max-width: 500px;
   padding: 1rem 2rem;
-  border-radius: 10%;
+  border-radius: 5%;
+  box-shadow: 10px 10px #ee6c4d;
+  margin: 1rem;
+}
+.bio__header {
+  font-size: 2rem;
 }
 
 .profile-img {
   border-radius: 50%;
+  border: 4px solid;
+}
+
+.icon {
+  width: 28px;
 }
 
 .profile {
@@ -24,4 +44,13 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 1rem;
+}
+
+.bio__intro {
+  margin: 1.5rem 0;
+}
+
+.icon-container {
+  display: flex;
+  gap: 1rem;
 }

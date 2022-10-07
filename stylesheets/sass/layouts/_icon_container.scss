@@ -1,0 +1,6 @@
+@use '../global/variables' as *;
+
+.icon-container {
+  display: flex;
+  gap: $space-m;
+}

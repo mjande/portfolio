@@ -1,5 +1,6 @@
 @use '../global/variables' as *;
 
 .profile-img {
-  border-radius: $circular;
+  border-radius: 50%;
+  border: 4px solid;
 }
