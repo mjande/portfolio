@@ -1,12 +1,37 @@
+@use '../global/variables' as *;
+
 .card {
   border-radius: 5%;
   border: 3px solid;
   max-width: 350px;
-  max-height: 400px;
+  height: 400px;
+  background-color: $light-cyan;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &__img {
     height: 200px;
     width: 350px;
     object-fit: cover;
+    border-radius: 5% 5% 0 0;
+  }
+
+  &__header {
+    display: flex;
+    gap: $space-s;
+    padding: 0 $space-s;
+  }
+
+  &__body {
+    padding: 0 $space-s $space-s;
+  }
+
+  &__links {
+    padding: 0 $space-s $space-s;
+    display: flex;
+    align-items: center;
+    gap: $space-s;
   }
 }
