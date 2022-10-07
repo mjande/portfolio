@@ -1,15 +1,31 @@
+@use '../global/media' as *;
 @use '../global/variables' as *;
 
 .technologies {
+  margin: 0 $space-xxl;
+  
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: $space-m;
-  margin-bottom: $space-xl;
 
-  &__icons {
-    display: flex;
-    gap: $space-l;
-    justify-content: center;
+  @include media(laptopAndUp) {
+    gap: $space-xxl;
   }
+}
+
+.tech-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space-xl;
+}
+
+.tech-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $space-m;
 }

@@ -6,16 +6,22 @@
   margin: 0;
 }
 
-body {
-  margin: 0;
-  background-color: $bdazzled-blue;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fredericka the Great', sans-serif;
+}
+
+h1 {
   font-size: $font-size-xxxl;
+}
+
+h2 {
+  font-size: $font-size-xxl
 }
 
 section {
   padding: $space-l 0;
+}
+
+div, p {
+  line-height: 1.5;
 }

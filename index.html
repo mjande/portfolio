@@ -11,57 +11,78 @@
   <title>Matt Anderson Portfolio</title>
 </head>
 <body>
-  <section>
+  <section class="background_is-dark">
     <div class="profile">
-      <img src="https://picsum.photos/300" class="img_is-rounded">
+      <img src="img/headshot.jpg" class="img">
       <div class="box"> 
         <h1 class="box__header">Matt Anderson</h1>
         <div class="box__body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium, elit at congue iaculis, sem diam viverra lorem, in volutpat justo sapien id metus. Aenean posuere neque ac gravida rutrum. Mauris felis augue, tempor quis purus aliquet, ornare varius elit. Proin facilisis justo risus, in facilisis libero auctor eget. Quisque semper nisl ut tortor suscipit, nec feugiat odio tristique. Integer.</p>
+          <p>Hi there! I'm Matt, and I'm a software developer. After an unsatisyfing career as a teacher, I discovered a passion for programming, and I've spent the last year upgrading my skills with both front-end and back-end technologies. I'm interested in effective front-end design, creating useful UI/UX features, and crafting changeable and secure back-ends. Take a look at some of my recent projects below, and, if you'd like to get in touch, use the contact form at the end of the page. </p>
         </div>
 
-        <div class="icons_is-wide">
+        <div class="icons">
           <a href="https://github.com/mjande">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon_is-small"/>
           </a>
           <a href="https://www.linkedin.com/in/matthew-anderson-a72a6218b/">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" class="icon"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" class="icon_is-small"/>
           </a>
         </div>
       </div>
     </div>  
 
     <div class="technologies">
-      <h1 class="header_is-white">Technologies</h1>
-      <div class="icons_is-wide">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class='icon_is-medium' alt='HTML5' title='HTML5'/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class='icon_is-medium' alt='CSS3' title='CSS3'/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class='icon_is-medium' alt='JavaScript' title='JavaScript'/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg" class='icon_is-medium' alt='Ruby on Rails' title='Ruby on Rails'/> 
+      <h1 class="header_is-white tech-header">Technical Skills</h1>
+
+      <div class="tech-categories">
+        <div class="tech-category">
+          <h2 class="header_is-white">Languages</h2>
+          <div class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class='icon' alt='HTML5' title='HTML5'/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class='icon' alt='CSS3' title='CSS3'/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class='icon' alt='JavaScript' title='JavaScript'/> 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain.svg" class="icon"/>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h2 class="header_is-white">Frameworks and Tools</h2>
+          <div class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg" class='icon' alt='Ruby on Rails' title='Ruby on Rails'/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="icon" alt="Tailwind CSS" title="Tailwind CSS"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg" class="icon" alt="Bulma" title="Bulma"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="icon" alt="PostgreSQL" title="PostgreSQL"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" class="icon" alt="Heroku" title="Heroku"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="icon" alt="Git" title="Git"/>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="projects">
-    <h1>Projects</h1>
-    <article>
-      <img src="https://picsum.photos/200">
-      <h1>Project Name</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit pretium felis non eleifend. Sed lectus turpis, fermentum in vulputate fermentum, luctus ac elit. Aenean nibh massa, sollicitudin nec tortor ut, cursus consectetur orci. Aliquam efficitur ullamcorper facilisis. Integer at.</p>
-    </article>
-    <article>
-      <img src="https://picsum.photos/200">
-      <h1>Project Name</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit pretium felis non eleifend. Sed lectus turpis, fermentum in vulputate fermentum, luctus ac elit. Aenean nibh massa, sollicitudin nec tortor ut, cursus consectetur orci. Aliquam efficitur ullamcorper facilisis. Integer at.</p>
-    </article>
-    <article>
-      <img src="https://picsum.photos/200">
-      <h1>Project Name</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit pretium felis non eleifend. Sed lectus turpis, fermentum in vulputate fermentum, luctus ac elit. Aenean nibh massa, sollicitudin nec tortor ut, cursus consectetur orci. Aliquam efficitur ullamcorper facilisis. Integer at.</p>
-    </article>
+  <section class="background_is-light">
+    <h1 class="header_is-centered">Projects</h1>
+
+    <div class="projects">
+      <article class="card">
+        <img src="https://picsum.photos/200" class="card__img">
+        <h1>Project Name</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit pretium felis non eleifend. Sed lectus turpis, fermentum in vulputate fermentum, luctus ac elit. Aenean nibh massa, sollicitudin nec tortor ut, cursus consectetur orci. Aliquam efficitur ullamcorper facilisis. Integer at.</p>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/200" class="card__img">
+        <h1>Project Name</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit pretium felis non eleifend. Sed lectus turpis, fermentum in vulputate fermentum, luctus ac elit. Aenean nibh massa, sollicitudin nec tortor ut, cursus consectetur orci. Aliquam efficitur ullamcorper facilisis. Integer at.</p>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/200" class="card__img">
+        <h1>Project Name</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit pretium felis non eleifend. Sed lectus turpis, fermentum in vulputate fermentum, luctus ac elit. Aenean nibh massa, sollicitudin nec tortor ut, cursus consectetur orci. Aliquam efficitur ullamcorper facilisis. Integer at.</p>
+      </article>
+    </div>
   </section>
 
-  <section>
+  <section class="background_is-dark">
     <h1>Contact me</h1>
     <p>Please get in touch with so I can have a job!</p>
     <p>Phone Number</p>

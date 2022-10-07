@@ -1,6 +1,12 @@
 @use '../global/media' as *;
 @use '../global/variables' as *;
 
-.projects {
-  background-color: $dark-sky-blue;
+.background {
+  &_is-dark {
+    background-color: $bdazzled-blue;
+  }
+
+  &_is-light {
+    background-color: $dark-sky-blue;
+  }
 }

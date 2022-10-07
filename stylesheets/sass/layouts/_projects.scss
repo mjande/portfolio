@@ -1,0 +1,10 @@
+@use '../global/variables' as *;
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: $space-l $space-xl;
+  gap: $space-xl;
+}

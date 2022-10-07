@@ -6,8 +6,10 @@
 @use 'components/box';
 @use 'components/img';
 @use 'components/header';
-@use 'components/icons';
+@use 'components/icon';
+@use 'components/card';
 
 // Layouts
 @use 'layouts/profile';
 @use 'layouts/technologies';
+@use 'layouts/projects';
