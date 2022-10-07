@@ -1,0 +1,15 @@
+@use '../global/variables' as *;
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-m;
+  margin-bottom: $space-xl;
+
+  &__icons {
+    display: flex;
+    gap: $space-l;
+    justify-content: center;
+  }
+}

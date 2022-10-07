@@ -1,14 +1,14 @@
 @use '../global/variables' as *;
 
-.bio {
+.box {
   background-color: $light-cyan;
   max-width: 500px;
   padding: 1rem 2rem;
   border-radius: 5%;
   box-shadow: 10px 10px $burnt-sienna;
-  margin: $space-m;
 
-  &__header {
-    font-size: $font-size-xxxl;
+  &__body {
+    margin: $space-m 0;
   }
 }
+

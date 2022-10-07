@@ -1,0 +1,30 @@
+@use '../global/variables' as *;
+
+.icons {
+  display: flex;
+  gap: $space-m;
+
+  &_is-wide {
+    display: flex;
+    gap: $space-l;
+  }
+}
+
+.icon {
+  width: 2rem;
+  transition: transform 0.5s;
+  
+  &:hover {
+    transform: scale(1.3);
+  }
+
+  &_is-medium {
+    width: 3.5rem;
+
+    transition: transform 0.5s;
+  
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

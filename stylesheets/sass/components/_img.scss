@@ -1,0 +1,10 @@
+@use '../global/variables' as *;
+
+.img {
+  border: 4px solid;
+
+  &_is-rounded {
+    border: 4px solid;
+    border-radius: 50%;
+  }
+}

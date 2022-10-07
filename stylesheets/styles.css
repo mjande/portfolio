@@ -11,46 +11,91 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fredericka the Great", sans-serif;
+  font-size: 2rem;
+}
+
+section {
+  padding: 1.5rem 0;
 }
 
 .projects {
   background-color: #98c1d9;
 }
 
-.bio {
+.box {
   background-color: #e0fbfc;
   max-width: 500px;
   padding: 1rem 2rem;
   border-radius: 5%;
   box-shadow: 10px 10px #ee6c4d;
-  margin: 1rem;
 }
-.bio__header {
-  font-size: 2rem;
+.box__body {
+  margin: 1rem 0;
 }
 
-.profile-img {
-  border-radius: 50%;
+.img {
   border: 4px solid;
+}
+.img_is-rounded {
+  border: 4px solid;
+  border-radius: 50%;
+}
+
+.header_is-white {
+  color: white;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+.icons_is-wide {
+  display: flex;
+  gap: 1.5rem;
 }
 
 .icon {
-  width: 28px;
+  width: 2rem;
+  transition: transform 0.5s;
+}
+.icon:hover {
+  transform: scale(1.3);
+}
+.icon_is-medium {
+  width: 3.5rem;
+  transition: transform 0.5s;
+}
+.icon_is-medium:hover {
+  transform: scale(1.3);
 }
 
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 1.5rem;
+  margin: 2rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .profile {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
-.bio__intro {
-  margin: 1.5rem 0;
+.profile .box {
+  margin: 1.5rem;
 }
 
-.icon-container {
+.technologies {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  margin-bottom: 2rem;
+}
+.technologies__icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
 }

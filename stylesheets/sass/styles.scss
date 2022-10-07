@@ -3,10 +3,11 @@
 
 // Components
 @use 'components/backgrounds';
-@use 'components/bio';
-@use 'components/profile_img';
-@use 'components/icon';
+@use 'components/box';
+@use 'components/img';
+@use 'components/header';
+@use 'components/icons';
 
 // Layouts
 @use 'layouts/profile';
-@use 'layouts/icon_container'
+@use 'layouts/technologies';
