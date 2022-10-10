@@ -1,3 +1,5 @@
+@use '../global/variables' as *;
+
 .header {
   &_is-white {
     color: white;
@@ -5,5 +7,6 @@
 
   &_is-centered {
     text-align: center;
+    margin: $space-m 0;
   }
 }

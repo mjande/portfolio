@@ -3,10 +3,14 @@
 
 .background {
   &_is-dark {
-    background-color: $bdazzled-blue;
+    background-color: $blue-sapphire;
+  }
+
+  &_is-medium {
+    background-color: $blue-green;
   }
 
   &_is-light {
-    background-color: $dark-sky-blue;
+    background-color: $light-cornflower-blue;
   }
 }
