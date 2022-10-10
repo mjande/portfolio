@@ -111,6 +111,7 @@ div, p {
   max-width: 350px;
   height: 400px;
   background-color: #e8ddb5;
+  transition: transform 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -135,7 +136,38 @@ div, p {
   align-items: center;
   gap: 0.75rem;
 }
+.card:hover {
+  transform: scale(105%);
+}
 
+.slide-in-right {
+  animation: 1s slideInRight;
+}
+
+.slide-in-left {
+  animation: 1s slideInLeft;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0%;
+    margin-left: 20%;
+  }
+  to {
+    opacity: 100%;
+    margin-left: 0%;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0%;
+    margin-right: 20%;
+  }
+  to {
+    opacity: 100%;
+    margin-right: 0;
+  }
+}
 .profile {
   display: flex;
   flex-direction: column;
