@@ -40,35 +40,3 @@
     transform: scale(105%);
   }
 }
-
-.slide-in-right {
-  animation: 1s slideInRight;
-}
-
-.slide-in-left {
-  animation: 1s slideInLeft
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0%;
-    margin-left: 20%;
-  }
-
-  to {
-    opacity: 100%;
-    margin-left: 0%;
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0%;
-    margin-right: 20%;
-  }
-
-  to {
-    opacity: 100%;
-    margin-right: 0;
-  }
-}

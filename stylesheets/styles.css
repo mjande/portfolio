@@ -24,6 +24,9 @@ div, p {
   line-height: 1.5;
 }
 
+.background_is-darkest {
+  background-color: #023047;
+}
 .background_is-dark {
   background-color: #126782;
 }
@@ -35,7 +38,7 @@ div, p {
 }
 
 .box {
-  background-color: #e0fbfc;
+  background-color: #e8ddb5;
   max-width: 500px;
   padding: 1rem 2rem;
   border-radius: 5%;
@@ -105,6 +108,21 @@ div, p {
   transform: scale(1.1);
 }
 
+.icon-slide-in {
+  animation: 1s 1s iconSlideIn forwards;
+  opacity: 0%;
+}
+
+@keyframes iconSlideIn {
+  from {
+    opacity: 0%;
+    margin-bottom: 100%;
+  }
+  to {
+    opacity: 100%;
+    margin-bottom: 0%;
+  }
+}
 .card {
   border-radius: 5%;
   border: 3px solid;
@@ -140,6 +158,28 @@ div, p {
   transform: scale(105%);
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem;
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+@media (min-width: 900px) {
+  .profile {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 5.5rem;
+    margin-top: 2.5rem;
+  }
+}
+
+.profile .box {
+  margin: 1.5rem;
+}
+
 .slide-in-right {
   animation: 1s slideInRight;
 }
@@ -151,7 +191,7 @@ div, p {
 @keyframes slideInRight {
   from {
     opacity: 0%;
-    margin-left: 20%;
+    margin-left: 10%;
   }
   to {
     opacity: 100%;
@@ -161,31 +201,13 @@ div, p {
 @keyframes slideInLeft {
   from {
     opacity: 0%;
-    margin-right: 20%;
+    margin-right: 10%;
   }
   to {
     opacity: 100%;
     margin-right: 0;
   }
 }
-.profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 2rem 1.5rem;
-}
-@media (min-width: 800px) {
-  .profile {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-.profile .box {
-  margin: 1.5rem;
-}
-
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -223,4 +245,33 @@ div, p {
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.sidebar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  padding-left: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 2px 10px;
+}
+@media (min-width: 900px) {
+  .sidebar {
+    display: block;
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    gap: 1.5rem;
+    box-shadow: 2px 0 10px;
+  }
 }

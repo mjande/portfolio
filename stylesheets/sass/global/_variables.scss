@@ -1,10 +1,4 @@
 // Colors
-$bdazzled-blue: #3d5a80ff;
-$dark-sky-blue: #98c1d9ff;
-$light-cyan: #e0fbfcff;
-$burnt-sienna: #ee6c4dff;
-$gunmetal: #293241ff;
-
 $light-cornflower-blue: #8ecae6ff;
 $blue-green: #219ebcff;
 $blue-sapphire: #126782ff;
@@ -23,6 +17,18 @@ $space-xl: 2rem;      // 32px
 $space-xxl: 2.5rem;   // 40px
 $space-xxxl: 3rem;    // 48px
 $space-xxxxl: 4rem;   // 64px
+$space-xxl-margin-added: 90px;
+
+@mixin addSidebar($margin, $position) {
+  @if ($position == top) {
+    margin-top: $margin + $space-xxxl;
+    margin-left: $margin;
+  } @else {
+    margin-left: $margin + $space-xxxl;
+    margin-top: $margin;
+  }
+}
+
 
 // Font sizes 
 $font-size-xs: 0.75rem;   // 12px

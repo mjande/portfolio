@@ -38,3 +38,20 @@
     }
   }
 }
+
+.icon-slide-in {
+  animation: 1s 1s iconSlideIn forwards;
+  opacity: 0%;
+}
+
+@keyframes iconSlideIn {
+  from {
+    opacity: 0%;
+    margin-bottom: 100%;
+  }
+
+  to {
+    opacity: 100%;
+    margin-bottom: 0%;
+  }
+}

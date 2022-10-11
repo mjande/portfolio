@@ -2,6 +2,10 @@
 @use '../global/variables' as *;
 
 .background {
+  &_is-darkest {
+    background-color: $prussian-blue;
+  }
+  
   &_is-dark {
     background-color: $blue-sapphire;
   }
