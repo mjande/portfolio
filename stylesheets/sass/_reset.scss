@@ -25,3 +25,12 @@ section {
 div, p {
   line-height: 1.5;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+}

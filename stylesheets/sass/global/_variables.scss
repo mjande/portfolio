@@ -25,6 +25,7 @@ $space-xxl-margin-added: 90px;
     margin-left: $margin;
   } @else {
     margin-left: $margin + $space-xxxl;
+    margin-right: $margin;
     margin-top: $margin;
   }
 }

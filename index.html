@@ -33,10 +33,10 @@
     </div>
     <div class="sidebar__links">
       <a href="https://github.com/mjande">
-        <img src="img/github.svg" class="icon_is-small icon-slide-in icon_is-white sidebar__icon-right"/>
+        <img src="img/github.svg" alt="github" title="GitHub" class="icon_is-small icon-slide-in sidebar__icon-right"/>
       </a>
       <a href="https://www.linkedin.com/in/matthew-anderson-a72a6218b/">
-        <img src="img/linkedin.svg" class="icon_is-small icon-slide-in icon_is-white sidebar__icon-right" />
+        <img src="img/linkedin.svg" alt="linkedin" title="LinkedIn" class="icon_is-small icon-slide-in sidebar__icon-right" />
       </a>
     </div>
   </aside>
@@ -128,7 +128,7 @@
             <img src="img/link-solid.svg" class="icon_is-small">
           </a>
           <a href="https://github.com/mjande/hikerbook">
-            <img src="img/github-white.svg" class="icon_is-small"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon_is-small"/>
           </a>
         </div>
       </article>
@@ -172,10 +172,24 @@
   </section>
 
   <section class="background_is-dark" id="contact">
-    <h1>Contact me</h1>
-    <p>Please get in touch with so I can have a job!</p>
-    <p>Phone Number</p>
-    <p>Email</p>
+    <div class="contact">  
+      <h1 class="header_is-white">Contact</h1>
+      <p class="contact__blurb">Let's get in touch! If you would like to contact me about any job opportunities or thoughts on my projects, send me an email at mjande@umich.edu or use the form below.</p>
+      <form action="https://formspree.io/f/xvoyqwyb" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" cols="60"></textarea>
+
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
   </section>
 </body>
 </html>

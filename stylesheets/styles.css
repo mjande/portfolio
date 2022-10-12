@@ -24,6 +24,15 @@ div, p {
   line-height: 1.5;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+}
+
 .background_is-darkest {
   background-color: #023047;
 }
@@ -74,6 +83,13 @@ div, p {
   text-align: center;
   margin: 1rem 0;
 }
+@media (min-width: 900px) {
+  .header_is-centered {
+    margin-left: 4.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
 
 .icons {
   display: flex;
@@ -89,6 +105,7 @@ div, p {
   transform: scale(1.3);
 }
 .icon_is-small {
+  position: relative;
   width: 1.5rem;
   transition: transform 0.5s;
 }
@@ -116,11 +133,11 @@ div, p {
 @keyframes iconSlideIn {
   from {
     opacity: 0%;
-    margin-bottom: 100%;
+    bottom: 2rem;
   }
   to {
     opacity: 100%;
-    margin-bottom: 0%;
+    bottom: 0;
   }
 }
 .card {
@@ -172,6 +189,7 @@ div, p {
     flex-direction: row;
     justify-content: center;
     margin-left: 5.5rem;
+    margin-right: 2.5rem;
     margin-top: 2.5rem;
   }
 }
@@ -216,6 +234,13 @@ div, p {
   margin: 1.5rem 2rem;
   gap: 2rem;
 }
+@media (min-width: 900px) {
+  .projects {
+    margin-left: 5rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+}
 
 .about {
   display: flex;
@@ -223,6 +248,13 @@ div, p {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+}
+@media (min-width: 900px) {
+  .about {
+    margin-left: 4.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+  }
 }
 
 .bio {
@@ -272,7 +304,7 @@ div, p {
     justify-content: center;
     padding: 0;
     gap: 1.5rem;
-    box-shadow: 2px 0 10px;
+    box-shadow: none;
   }
 }
 .sidebar__navigation {
@@ -297,5 +329,24 @@ div, p {
   .sidebar__links {
     flex-direction: column;
     margin-right: 0;
+    margin-bottom: 1rem;
   }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .contact {
+    margin-left: 4rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+}
+.contact__blurb {
+  max-width: 650px;
+  text-align: center;
+  color: white;
 }

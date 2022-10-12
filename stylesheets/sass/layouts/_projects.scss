@@ -1,3 +1,4 @@
+@use '../global/media' as *;
 @use '../global/variables' as *;
 
 .projects {
@@ -7,4 +8,8 @@
   justify-content: center;
   margin: $space-l $space-xl;
   gap: $space-xl;
+
+  @include media(tabletAndUp) {
+    @include addSidebar($space-xl, left)
+  }
 }
