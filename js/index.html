@@ -6,9 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/7342983eb1.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
-  
+  <h1>My Library</h1>
+  <div class="books">
+    <template id="book-template">
+      <div class="book">
+        <button id="delete" class="delete">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>  
+        <h2 id="title"></h2>
+        <div id="author"></div>
+        <div id="pages"></div>
+        <div id="read"></div>
+      </div>
+    </template>
+  </div>
+
+  <button type="button" id="new-book-button" onclick="showForm()">New Book</button>
+
+  <form class="new-book-form hidden">
+    <div> 
+      <label for="title">Title:</label><br>
+      <input type="text" id="new-book-title" name="title">
+    </div>
+
+    <div>
+      <label for="author">Author:</label><br>
+      <input type="text" id="new-book-author" name="author">
+    </div>
+
+    <div>
+      <label for="pages">Number of pages:</label><br>
+      <input type="number" id="new-book-pages" name="pages">
+    </div>
+
+    <div>
+      <input type="radio" id="new-book-read" name="read" checked>
+      <label for="read">Read</label>
+      <input type="radio" id="new-book-not-read" name="read">
+      <label for="not-read">Not Read</label>
+    </div>
+
+    <button>Submit</button>
+
+  </form>
 </body>
 </html>
