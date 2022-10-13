@@ -53,3 +53,44 @@
     }
   }
 }
+
+.sidebar__icon-1 {
+  animation: 1s 1s iconSlideIn forwards;
+  opacity: 0%;
+}
+
+.sidebar__icon-2 {
+  animation: 1s 1.5s iconSlideIn forwards;
+  opacity: 0%;
+}
+
+.sidebar__icon-3 {
+  animation: 1s 2s iconSlideIn forwards;
+  opacity: 0%;
+}
+
+.sidebar__icon-4 {
+  animation: 1s 2.5s iconSlideIn forwards;
+  opacity: 0%;
+}
+
+.sidebar__icon-5 {
+  animation: 1s 1s iconSlideIn forwards;
+  opacity: 0%;
+}
+.sidebar__icon-6 {
+  animation: 1s 1.5s iconSlideIn forwards;
+  opacity: 0%;
+}
+
+@keyframes iconSlideIn {
+  from {
+    opacity: 0%;
+    bottom: $space-xl;
+  }
+
+  to {
+    opacity: 100%;
+    bottom: 0;
+  }
+}

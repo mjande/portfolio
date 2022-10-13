@@ -40,20 +40,3 @@
     }
   }
 }
-
-.icon-slide-in {
-  animation: 1s 1s iconSlideIn forwards;
-  opacity: 0%;
-}
-
-@keyframes iconSlideIn {
-  from {
-    opacity: 0%;
-    bottom: $space-xl;
-  }
-
-  to {
-    opacity: 100%;
-    bottom: 0;
-  }
-}
