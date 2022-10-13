@@ -1,0 +1,45 @@
+@use '../global/variables' as *;
+
+form {
+  background-color: $dutch-white;
+  padding: $space-m;
+  margin: $space-m;
+  border-radius: 5%;
+}
+
+form label {
+  color: black;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  padding: $space-s;
+  margin: $space-xxs 0;
+  border: 1px solid;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+form button {
+  padding: $space-xs $space-m;
+  margin-top: $space-xs;
+  align-self: end;
+  background-color: $flame;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: $font-size-l;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    background-color: $rust;
+  }
+}
+
+
