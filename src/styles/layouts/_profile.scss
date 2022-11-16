@@ -6,13 +6,14 @@
   flex-direction: column;
   align-items: center;
   gap: $space-l;
-  margin: $space-m;
-  @include addnavbar($space-m, top);
+  margin: $space-xxxxl 0;
+  
 
   @include media(tabletAndUp) {
     flex-direction: row;
     justify-content: center;
-    @include addnavbar($space-xxl, left);
+    height: 90vh;
+    margin: 0;
   }
 }
 
