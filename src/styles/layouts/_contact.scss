@@ -7,7 +7,7 @@
   align-items: center;
 
   @include media(tabletAndUp) {
-    @include addSidebar($space-m, left)
+    @include addnavbar($space-m, left)
   }
 
   &__blurb {

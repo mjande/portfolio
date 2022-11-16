@@ -11,7 +11,7 @@
     margin: $space-m 0;
 
     @include media(tabletAndUp) {
-      @include addSidebar($space-l, left)
+      @include addnavbar($space-l, left)
     }
   }
 }

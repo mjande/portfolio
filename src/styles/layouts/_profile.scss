@@ -7,12 +7,12 @@
   align-items: center;
   gap: $space-l;
   margin: $space-m;
-  @include addSidebar($space-m, top);
+  @include addnavbar($space-m, top);
 
   @include media(tabletAndUp) {
     flex-direction: row;
     justify-content: center;
-    @include addSidebar($space-xxl, left);
+    @include addnavbar($space-xxl, left);
   }
 }
 

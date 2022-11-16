@@ -20,7 +20,7 @@ $space-xxxl: 3rem;    // 48px
 $space-xxxxl: 4rem;   // 64px
 $space-xxl-margin-added: 90px;
 
-@mixin addSidebar($margin, $position) {
+@mixin addnavbar($margin, $position) {
   @if ($position == top) {
     margin-top: $margin + $space-xxxl;
     margin-left: $margin;

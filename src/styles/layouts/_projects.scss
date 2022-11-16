@@ -10,6 +10,6 @@
   gap: $space-xl;
 
   @include media(tabletAndUp) {
-    @include addSidebar($space-xl, left)
+    @include addnavbar($space-xl, left)
   }
 }

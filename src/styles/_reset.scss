@@ -4,10 +4,17 @@
   font-family: 'Barlow', sans-serif;
   font-size: $font-size-m;
   margin: 0;
+  color: #444444
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
   font-family: 'Fredericka the Great', sans-serif;
+  line-height: 1.2;
 }
 
 h1 {
@@ -23,7 +30,7 @@ section {
 }
 
 div, p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 form {
