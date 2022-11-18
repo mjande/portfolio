@@ -1,6 +1,10 @@
 @use '../global/media' as *;
 @use '../global/variables' as *;
 
+#projects {
+  min-height: 90vh;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -8,8 +12,4 @@
   justify-content: center;
   margin: $space-l $space-xl;
   gap: $space-xl;
-
-  @include media(tabletAndUp) {
-    @include addnavbar($space-xl, left)
-  }
 }

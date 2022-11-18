@@ -1,16 +1,16 @@
 @use '../global/media' as *;
 @use '../global/variables' as *;
 
+#about {
+  min-height: 90vh;
+}
+
 .about {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: $space-xxl;
-  
-  @include media(tabletAndUp) {
-    @include addnavbar($space-l, left)
-  }
 }
 
 .bio {
