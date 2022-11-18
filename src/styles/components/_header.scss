@@ -9,9 +9,5 @@
   &_is-centered {
     text-align: center;
     margin: $space-m 0;
-
-    @include media(tabletAndUp) {
-      @include addnavbar($space-l, left)
-    }
   }
 }
