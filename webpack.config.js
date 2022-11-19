@@ -13,6 +13,8 @@ module.exports = {
   devServer: {
     static: "./public",
     port: 5000,
+    compress: true,
+    public: "matthewanderson.dev",
   },
   plugins: [
     new HtmlWebpackPlugin({
