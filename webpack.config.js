@@ -14,7 +14,7 @@ module.exports = {
     static: "./public",
     port: 5000,
     compress: true,
-    public: "matthewanderson.dev",
+    allowedHosts: "matthewanderson.dev",
   },
   plugins: [
     new HtmlWebpackPlugin({
