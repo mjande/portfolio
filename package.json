@@ -3,22 +3,8 @@
   "version": "1.0.0",
   "description": "A static website with my background, major projects, and contact details. Designed to show off my development skills and qualifications for a software development position.",
   "main": "index.js",
-  "devDependencies": {
-    "css-loader": "^6.7.2",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.1",
-    "sass": "^1.56.1",
-    "sass-loader": "^13.2.0",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0",
-    "webpack-dev-server": "^4.11.1"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "start": "webpack serve --open",
-    "heroku-postbuild": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
