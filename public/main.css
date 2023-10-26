@@ -96,6 +96,9 @@ label {
 .icons {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 75%;
   gap: 1.5rem;
 }
 
@@ -131,7 +134,7 @@ label {
   border-radius: 5%;
   border: 3px solid;
   max-width: 350px;
-  height: 400px;
+  height: 425px;
   background-color: white;
   transition: transform 0.5s;
   display: flex;
@@ -148,7 +151,7 @@ label {
 .card__header {
   display: flex;
   gap: 0.75rem;
-  padding: 0 0.75rem;
+  padding: 0.5rem 0.75rem;
 }
 .card__body {
   padding: 0 0.75rem 0.75rem;
