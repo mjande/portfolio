@@ -96,10 +96,14 @@ label {
 .icons {
   display: flex;
   align-items: center;
+
+  gap: 1.5rem;
+}
+
+.technology-icons {
+  max-width: 75%;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 75%;
-  gap: 1.5rem;
 }
 
 .icon {
